@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="velada_fondo">#FF000000</color>
-    <color name="titulo">#FFFFFFFF</color>
+    <color name="titulo">#E7C08A</color>
+    <color name="subtitulo">#FFFFFF</color>
+    <color name="texto_boton">#FAF8F8</color>
 </resources>

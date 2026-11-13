@@ -1,43 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/margin_large"
+    android:background="@color/velada_fondo"
     tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/ivVelada"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/img_hero_height"
+        android:contentDescription="@string/velada_image_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/velada_vii" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
         android:text="@string/velada_title"
-        android:textSize="24sp"
+        android:textSize="@dimen/text_title"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"
-        tools:ignore="MissingConstraints"
-     />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.01"
+        android:textColor="@color/titulo"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/subtitle"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/margin_medium"
         android:text="@string/subtitle"
+        android:lineSpacingExtra="@dimen/line_spacing_extra"
+        android:textColor="@color/subtitulo"
         android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        android:textSize="@dimen/text_subtitle" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/shape_boton_velada"
+        android:minHeight="@dimen/button_min_height"
+        android:text="@string/boton"
+        android:textAllCaps="false"
+        android:textColor="@color/texto_boton"
+        android:textSize="@dimen/text_button"
+        android:textStyle="bold" />
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
