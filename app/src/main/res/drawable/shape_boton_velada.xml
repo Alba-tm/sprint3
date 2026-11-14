@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="#D4AF37" />
-    <corners android:radius="24dp" />
-</shape>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/velada_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/velada_dorado" />
+            <corners android:radius="@dimen/button_corner_radius" />
+        </shape>
+    </item>
+</ripple>

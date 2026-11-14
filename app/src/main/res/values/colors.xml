@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="velada_fondo">#FF000000</color>
+    <color name="velada_foco">#FF3A2E10</color>
+    <color name="velada_dorado">#FFD4AF37</color>
+    <color name="velada_ripple">#33000000</color>
     <color name="titulo">#E7C08A</color>
     <color name="subtitulo">#FFFFFF</color>
-    <color name="texto_boton">#FAF8F8</color>
+    <color name="texto_boton">#FF000000</color>
 </resources>

@@ -1,58 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="@dimen/margin_large"
     android:background="@color/velada_fondo"
+    android:fillViewport="true"
     tools:context=".HomeActivity">
 
-    <ImageView
-        android:id="@+id/ivVelada"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/img_hero_height"
-        android:contentDescription="@string/velada_image_desc"
-        android:scaleType="fitCenter"
-        android:src="@drawable/velada_vii" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_large"
-        android:text="@string/velada_title"
-        android:textSize="@dimen/text_title"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
-        android:letterSpacing="0.01"
-        android:textColor="@color/titulo"
-        android:textAlignment="center" />
-
-    <TextView
-        android:id="@+id/subtitle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:text="@string/subtitle"
-        android:lineSpacingExtra="@dimen/line_spacing_extra"
-        android:textColor="@color/subtitulo"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_subtitle" />
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_large"
-        android:background="@drawable/shape_boton_velada"
-        android:minHeight="@dimen/button_min_height"
-        android:text="@string/boton"
-        android:textAllCaps="false"
-        android:textColor="@color/texto_boton"
-        android:textSize="@dimen/text_button"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/ivVelada"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_hero_height"
+            android:background="@drawable/shape_imagen_velada"
+            android:contentDescription="@string/velada_image_desc"
+            android:padding="@dimen/img_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/velada_vii" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.01"
+            android:text="@string/velada_title"
+            android:textAlignment="center"
+            android:textColor="@color/titulo"
+            android:textSize="@dimen/text_title" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:lineSpacingExtra="@dimen/line_spacing_extra"
+            android:text="@string/subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/subtitulo"
+            android:textSize="@dimen/text_subtitle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_extra_large"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/shape_boton_velada"
+            android:minHeight="@dimen/button_min_height"
+            android:text="@string/boton"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_boton"
+            android:textSize="@dimen/text_button"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
