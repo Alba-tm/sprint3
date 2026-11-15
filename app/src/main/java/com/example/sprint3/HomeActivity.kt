@@ -29,6 +29,7 @@ import com.example.sprint3.databinding.ActivityHomeBinding
  *    - Solo hay una acción principal y el botón es ancho, fácil de ver y de pulsar.
  *    - El botón responde al tocarlo y muestra un Toast avisando de que todavía no está implementado.
  *    - La pantalla tiene ScrollView, así que no se corta en horizontal ni en móviles pequeños.
+ *    - Un segundo botón secundario (con borde) abre la pantalla de detalle.
  *
  * 3. Accesibilidad
  *    - Buen contraste: texto negro sobre el botón dorado.
