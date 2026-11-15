@@ -77,5 +77,22 @@
             android:textSize="@dimen/text_button"
             android:textStyle="bold" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/shape_boton_secundario"
+            android:minHeight="@dimen/button_min_height"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:text="@string/btn_detail"
+            android:textAllCaps="false"
+            android:textColor="@color/velada_dorado"
+            android:textSize="@dimen/text_button"
+            android:textStyle="bold" />
+
     </LinearLayout>
 </ScrollView>

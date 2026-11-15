@@ -5,6 +5,8 @@
     <color name="velada_ripple">#33000000</color>
     <color name="velada_foco">#FF3A2E10</color>
     <color name="velada_brillo">#99D4AF37</color>
+    <color name="velada_card">#FF1C1C1C</color>
+    <color name="velada_ripple_claro">#33FFFFFF</color>
     <color name="titulo">#E7C08A</color>
     <color name="subtitulo">#FFFFFF</color>
     <color name="texto_boton">#FF000000</color>

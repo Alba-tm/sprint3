@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Sprint 3</string>
-    <string name="velada_btn_tickets">Comprar entradas</string>
     <string name="velada_toast_not_implemented">Esta funcionalidad todavía no está implementada</string>
     <string name="velada_image_desc">Cartel promocional oficial de La Velada del Año 2027 de Ibai</string>
     <string name="velada_title">La Velada del Año VII - 2027</string>
     <string name="subtitle">El mayor evento de boxeo y entretenimiento entre creadores de contenido. ¡Prepárate para una noche histórica!</string>
-    <string name="boton">Más información</string>
+    <string name="boton">Comprar entradas</string>
+    <string name="btn_detail">Ver detalles</string>
+    <string name="card_title">La Velada del Año VII</string>
+    <string name="card_subtitle">Ibai · 2027</string>
+    <string name="card_description">Una noche de boxeo y entretenimiento entre creadores de contenido. Muy pronto tendrás aquí toda la información.</string>
+    <string name="card_action_primary">Ver más</string>
+    <string name="card_action_secondary">Compartir</string>
 </resources>

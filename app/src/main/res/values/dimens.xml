@@ -14,4 +14,16 @@
     <dimen name="img_padding">8dp</dimen>
     <dimen name="linea_ancho">64dp</dimen>
     <dimen name="linea_alto">4dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_stroke_width">1dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_gap">8dp</dimen>
+    <dimen name="card_image_height">180dp</dimen>
+    <dimen name="card_button_min_height">48dp</dimen>
+    <dimen name="button_stroke_width">2dp</dimen>
+    <dimen name="text_card_title">20sp</dimen>
+    <dimen name="text_card_subtitle">14sp</dimen>
+    <dimen name="text_card_description">16sp</dimen>
+    <dimen name="text_card_button">16sp</dimen>
 </resources>

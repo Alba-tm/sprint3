@@ -1,5 +1,6 @@
 package com.example.sprint3
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
@@ -70,6 +71,10 @@ class HomeActivity : AppCompatActivity() {
                 getString(R.string.velada_toast_not_implemented),
                 Toast.LENGTH_SHORT,
             ).show()
+        }
+        binding.btnDetail.setOnClickListener {
+            val intent = Intent(this, DetailActivity::class.java)
+            startActivity(intent)
         }
     }
 }
