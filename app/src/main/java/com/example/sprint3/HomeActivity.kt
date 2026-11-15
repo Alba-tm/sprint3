@@ -14,19 +14,19 @@ import com.example.sprint3.databinding.ActivityHomeBinding
  * PRINCIPIOS QUE HE TENIDO EN CUENTA
  *
  * 1. Diseño (UI)
- *    - Orden claro: imagen, título, subtítulo y botón.
+ *    - Orden claro: imagen, título, subtítulo y botón dispuestos en una columna.
  *    - Pocos colores (negro, dorado y blanco) para que se parezca al cartel del evento.
- *    - Márgenes grandes para que la pantalla tenga esapcio suficiente.
+ *    - Márgenes grandes para que la pantalla no se vea agobiante.
  *    - Cada componente está personalizado:
  *        · Imagen: fondo con shape de degradado (efecto foco) y esquinas redondeadas.
- *        · Título: fuente más gruesa y color dorado.
- *        · Subtítulo: texto blanco, centrado y con más espacio entre líneas.
+ *        · Título: fuente más gruesa, color dorado y un pequeño brillo dorado.
+ *        · Línea decorativa: shape dorado entre título y subtítulo.
+ *        · Subtítulo: fuente fina, texto blanco, centrado y con más espacio entre líneas.
  *        · Botón: shape dorado con esquinas redondeadas.
  *
  * 2. Experiencia de usuario (UX)
- *    - Solo hay una acción principal que es el botón.
- *    - El botón responde al tocarlo y muestra un Toast avisando de que
- *      todavía no está implementado.
+ *    - Solo hay una acción principal y el botón es ancho, fácil de ver y de pulsar.
+ *    - El botón responde al tocarlo y muestra un Toast avisando de que todavía no está implementado.
  *    - La pantalla tiene ScrollView, así que no se corta en horizontal ni en móviles pequeños.
  *
  * 3. Accesibilidad
@@ -58,8 +58,8 @@ class HomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         ViewCompat.setAccessibilityHeading(binding.title, true)
-        binding.ivVelada.clipToOutline = true
         setupListeners()
     }
 
@@ -68,7 +68,7 @@ class HomeActivity : AppCompatActivity() {
             Toast.makeText(
                 this,
                 getString(R.string.velada_toast_not_implemented),
-                Toast.LENGTH_SHORT
+                Toast.LENGTH_SHORT,
             ).show()
         }
     }

@@ -32,16 +32,28 @@
             android:layout_marginTop="@dimen/margin_large"
             android:fontFamily="sans-serif-black"
             android:letterSpacing="0.01"
+            android:shadowColor="@color/velada_brillo"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="12"
             android:text="@string/velada_title"
             android:textAlignment="center"
             android:textColor="@color/titulo"
             android:textSize="@dimen/text_title" />
+
+        <View
+            android:layout_width="@dimen/linea_ancho"
+            android:layout_height="@dimen/linea_alto"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/shape_linea_dorada"
+            android:importantForAccessibility="no" />
 
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium"
+            android:fontFamily="sans-serif-light"
             android:lineSpacingExtra="@dimen/line_spacing_extra"
             android:text="@string/subtitle"
             android:textAlignment="center"
@@ -57,6 +69,8 @@
             android:layout_marginEnd="@dimen/margin_medium"
             android:background="@drawable/shape_boton_velada"
             android:minHeight="@dimen/button_min_height"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
             android:text="@string/boton"
             android:textAllCaps="false"
             android:textColor="@color/texto_boton"
